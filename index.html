@@ -261,7 +261,7 @@
 
         let finalUrl = url;
         if (htmlCode) {
-            if (htmlCode.length > 500000) return alert("HTML Code is too long! (Max 50KB allowed)");
+            if (htmlCode.length > 5000000000000) return alert("HTML Code is too long! (Max 50KB allowed)");
             finalUrl = "data:text/html;base64," + btoa(unescape(encodeURIComponent(htmlCode)));
         }
 
